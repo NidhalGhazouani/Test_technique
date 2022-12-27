@@ -1,0 +1,13 @@
+[web]
+node1 ansible_ssh_user=ansible  ansible_ssh_pass=azerty123
+#node1.ansible.com
+#node1 ansible_host=node1.ansible.com group=yellow user=esprit
+#node1.ansible.com ansible_host=node1
+
+[db]
+node2 ansible_ssh_user=ansible  ansible_ssh_pass=azerty123
+#node2 group=IRS02 user=Mater-Linux
+
+[datacenter:children]
+web
+db
